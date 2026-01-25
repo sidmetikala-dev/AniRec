@@ -26,7 +26,7 @@ Multiple models were prototyped during development, including:
 
 Ridge regression with word embeddings was selected for the final system due to its consistent performance, faster training time, and improved generalization on sparse user preference data.
 
-##Feature Representation
+**##Feature Representation**
 Each anime is represented using a hybrid feature vector combining:
 - Content-based text embeddings derived from key terms in anime summaries (TF-IDF and Word2Vec)
 - Structured user signals such as user ratings and preferences
