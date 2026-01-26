@@ -23,7 +23,7 @@ Anime descriptions are embedded into a semantic vector space and combined with s
 ### Why Ridge Regression?
 - Stable and interpretable
 - Performs well with high-dimensional embeddings
-- L2 regularization introduces bias that stabilizes learning and reduces variance on small, sparse datasets
+- L2 regularization introduces bias that stabilizes learning and reduces variance on small, high-dimensional, and sparse datasets
 
 ## Model Selection
 Multiple models were prototyped during development, including:
