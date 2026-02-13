@@ -3,8 +3,10 @@ import json
 import os
 import time
 from UsefulMethods import fetch_anime_details
+from dotenv import load_dotenv
+load_dotenv()
 
-client_id = '221713b4eb66c9198bdcf0825f746a11'
+client_id = os.getenv("CLIENT_ID")
 
 url = 'https://api.myanimelist.net/v2/anime/ranking'
 
