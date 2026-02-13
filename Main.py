@@ -3,10 +3,12 @@ from User_Data import UserData
 from Anime_Data import AnimeData
 from AniRec import AniRec
 from RidgeReg_WordEmb import RidgeReg
-
+from dotenv import load_dotenv
+import os
+load_dotenv()
 app = Flask(__name__)
 
-CLIENT_ID = "221713b4eb66c9198bdcf0825f746a11"  # keep your real key here
+CLIENT_ID = os.getenv("CLIENT_ID")
 
 @app.route("/")
 def root():
@@ -38,6 +40,3 @@ def recs():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-
-
